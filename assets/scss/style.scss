@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+/* Light Halloween Theme by Luique Cruz */
+$black: #332f33;
+$white: #e3dce3;
+$orange: #eb5611;
+
+@mixin display {
+
+  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 4px;
+  background-color: $black;
+  text-align: left;
+
+  a { text-decoration: none; }
+
+  #item {
+    border: 2px solid $orange;
+    border-radius: 4px;
+    background-color: $white;
+    margin: 0 0 15px 0;
+    cursor: pointer;
+  }
+
+  #title {
+    color: $orange;
+    font-size: 1.6em;
+    margin: 10px;
+  }
+
+  #text {
+    color: $black;
+    font-size: 1.1em;
+    letter-spacing: .7px;
+    margin: 0 10px 5px 10px;
+    padding-bottom: 5px;
+
+    h2 { margin-top: -5px; }
+
+    span { font-size: .6em; }
+  }
+
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: $black;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: .4em;
+  }
+
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $orange;
+    outline: 1px solid slategrey;
+  }
+}
+
+.wrapper {
+  width: 100vw;
+  height: auto;
+}
+
+.main {
+
+  .first {
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+    .logo {
+      margin-top: 15px;
+      color: $white;
+      font-size: 3.4em;
+      letter-spacing: 2px;
+      font-weight: 300;
+      transition-timing-function: ease-in;
+      trasition-duration: 2s;
+    }
+
+  }
+
+  .second {
+    margin: 15px auto;
+    width: 80%;
+
+    .form-group {
+      transition-duration: 3s;
+      transition-timing-function: ease-out;
+
+      &:hover {
+        box-shadow: 0 0 10px $orange;
+        transition-duration: 1s;
+      }
+
+      .form-control {
+        border: 2px solid $orange;
+        background: $white;
+      }
+
+      ::-webkit-input-placeholder { /* Chrome */ color: $black; }
+
+      ::-ms-input-placeholder { /* IE 10+ */ color: $black; }
+
+      ::-moz-placeholder { /* Firefox */ color: $black; }
+
+      ::-o-placeholder { /* Opera */ color: $black; }
+
+    }
+
+    #search-icon {
+      position: relative;
+      float: right;
+      top: -46px;
+      left: -3px;
+      width: 30px;
+      height: 28px;
+      color: $orange;
+      background: $white;
+      border: none;
+
+      &:focus { outline: none; }
+    }
+
+    /* animated button via css */
+    #random {
+      position: relative;
+      float: right;
+      width: 32px;
+      height: 32px;
+      left: 30px;
+      border: 2px solid $orange;
+      border-radius: 50%;
+      background: $white;
+      transition: all .5s, border-radius .3s;
+
+      .btn-txt {
+        visibility: hidden;
+        color: $black;
+        letter-spacing: .3px;
+        font-size: .9em;
+        position: absolute;
+        margin-left: -65px;
+        float: left;
+      }
+
+      .btn-icon {
+        float: right;
+        margin-right: 1px;
+
+        i { color: $orange; }
+
+      }
+
+      &:hover {
+         width: 142px;
+         border-radius: 4px;
+      }
+
+      &:focus { outline: none; }
+
+    }
+
+  }
+
+  .third  { @include display; }
+
+  .fourth { @include display; }
+
+}
+
+footer {
+  margin-top: 5%;
+  width: 100%;
+  color: $white;
+
+  .elements { min-width: 320px; }
+
+  #btt {
+    padding-bottom: 30px;
+
+    a {
+      color: $orange;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  }
+
+  .icons {
+    padding-bottom: 5px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      margin-left: 10px;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+
+      &:hover { transition-duration: .3s; }
+
+      &:first-child { margin-left: 0; }
+    }
+
+    #twitter  { &:hover { color: #55acee; } }
+    #linkedin { &:hover { color: #007bb5; } }
+    #github   { &:hover { color: #000000; } }
+
+  }
+
+  #name, #btt {
+    color: $orange;
+    margin: 0 auto;
+    text-decoration: none;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      text-shadow: 0 0 20px $orange;
+      color: $orange;
+      transition-duration: 1s;
+    }
+
+    &:active { color: $orange; }
+
+    &:visited { color: $orange; }
+
+  }
+
+}

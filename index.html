@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wiki Search</title>
+
+  <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="contianer-fluid wrapper">
+    <div id="top" class="container main">
+
+      <div class="row first text-center">
+        <h1 class="logo">Wiki Search</h1>
+      </div> <!-- end row -->
+
+      <div class="row second">
+        <!-- search bar -->
+        <div class="form-group">
+          <label for="search" class="sr-only">Search</label>
+          <input type="text" id="search" class="form-control" autocomplete="off" name="search" placeholder="Search . . .">
+        </div>
+
+        <!-- buttons -->
+        <button id="search-icon" class="glyphicon glyphicon-search"></button>
+        <button id="random">
+          <span class="btn-txt">Random Search</span>
+          <span class="btn-icon">
+            <i class="fa fa-random"></i>
+          </span>
+        </button>
+      </div> <!-- end row -->
+
+      <!-- Inject API data down here -->
+      <div class="row third">
+        <ul id="content"></ul>
+      </div> <!-- end row -->
+      <div class="row fourth">
+        <ul id="content-random"></ul>
+      </div> <!-- end row -->
+
+    </div> <!-- end main container -->
+  </div> <!-- end wrapper -->
+
+  <footer>
+    <div class="container-fluid text-center elements">
+      <div id="btt">
+        <a href="#top">Back to top</a>
+      </div>
+
+      <div class="icons">
+        <a id="twitter" href="https://twitter.com/luiquecruz" target="_blank">
+          <i class="fa fa-twitter fa-2x"></i>
+        </a>
+        <a id="linkedin" href="https://www.linkedin.com/in/luique-cruz/" target="_blank">
+          <i class="fa fa-linkedin fa-2x"></i>
+        </a>
+        <a id="github" href="https://github.com/Luiquecruz" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </div>
+
+      <div class="name">
+        Developed by <a id="name" href="https://www.freecodecamp.com/luiquecruz" target="_blank">Luique Cruz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jQuery-3.2/jquery-3.2.0.min.js"></script>
+  <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
